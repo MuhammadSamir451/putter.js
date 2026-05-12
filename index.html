@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital RAG Chatbot - Rawalpindi</title>
+    <script src="https://js.puter.com/v2/"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chat-container {
+            width: 600px;
+            height: 750px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .chat-header h1 { font-size: 1.5em; margin-bottom: 5px; }
+        .chat-header p { font-size: 0.85em; opacity: 0.9; }
+        .clear-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .clear-btn:hover { background: rgba(255,255,255,0.3); }
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .message.user { justify-content: flex-end; }
+        .message-content {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+        .message.bot .message-content {
+            background: white;
+            color: #333;
+            border: 1px solid #e0e0e0;
+            border-bottom-left-radius: 5px;
+        }
+        .message.bot { justify-content: flex-start; }
+        .typing-indicator {
+            display: flex;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 15px;
+            border: 1px solid #e0e0e0;
+            width: fit-content;
+        }
+        .typing-indicator span {
+            height: 8px;
+            width: 8px;
+            background: #999;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+            animation: typing 1.4s infinite;
+        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+        .chat-input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+        }
+        .chat-input:focus { border-color: #667eea; }
+        .send-button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .quick-actions {
+            padding: 10px 20px;
+            background: #f8f9fa;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            border-top: 1px solid #e0e0e0;
+        }
+        .quick-btn {
+            padding: 6px 12px;
+            background: white;
+            border: 1px solid #667eea;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .quick-btn:hover { background: #667eea; color: white; }
+        .message-content strong { color: #667eea; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🏥 Rawalpindi Health Assistant</h1>
+            <p>True RAG System | Semantic Search | Conversation Memory</p>
+            <button class="clear-btn" onclick="clearConversation()">🗑️ Clear</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    👋 <strong>Hello! I'm your AI healthcare assistant for Rawalpindi.</strong><br><br>
+                    I use <strong>True RAG (Retrieval Augmented Generation)</strong> to answer your questions.<br><br>
+                    <strong>Just ask me anything about hospitals in Rawalpindi!</strong><br><br>
+                    Try these examples:<br>
+                    • "List all hospitals in Rawalpindi"<br>
+                    • "What departments does Fauji Foundation Hospital have?"<br>
+                    • "Show me cardiology specialists"<br>
+                    • "Tell me about Benazir Bhutto Hospital"<br>
+                    • "Which hospitals have urology departments?"<br><br>
+                    <em>No need to use specific keywords - I understand natural language!</em>
+                </div>
+            </div>
+        </div>
+        <div class="quick-actions">
+            <button class="quick-btn" onclick="sendQuickMessage('List all hospitals')">🏥 All Hospitals</button>
+            <button class="quick-btn" onclick="sendQuickMessage('Cardiology departments')">❤️ Cardiology</button>
+            <button class="quick-btn" onclick="sendQuickMessage('Departments in Fauji Foundation Hospital')">🏨 Fauji Dept</button>
+            <button class="quick-btn" onclick="sendQuickMessage('Urology specialists')">🔬 Urology</button>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ask anything about hospitals in Rawalpindi..." onkeypress="handleKeyPress(event)">
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        async function sendMessage() {
+            const inputElement = document.getElementById('chatInput');
+            const message = inputElement.value.trim();
+            if (!message) return;
+            
+            inputElement.value = '';
+            addMessage(message, 'user');
+            showTypingIndicator();
+            
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: message })
+                });
+                
+                const data = await response.json();
+                
+                const prompt = `You are a helpful healthcare assistant for hospitals in Rawalpindi, Pakistan.
+
+CONTEXT (Use ONLY this information):
+${data.context}
+
+USER QUESTION: ${message}
+
+INSTRUCTIONS:
+1. Answer based ONLY on the context above
+2. If the context has hospital/department/specialist information, provide it completely
+3. Format your response nicely with bullet points and clear sections
+4. Be friendly, accurate, and helpful
+5. If the information isn't in the context, say "I don't have that information in my database"
+6. DO NOT make up information
+
+Your response:`;
+                
+                const grokResponse = await puter.ai.chat(prompt, {
+                    model: 'x-ai/grok-4-1-fast',
+                    temperature: 0.2,
+                    max_tokens: 1500
+                });
+                
+                removeTypingIndicator();
+                addMessage(grokResponse.message.content, 'bot');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                removeTypingIndicator();
+                addMessage('Sorry, I encountered an error. Please make sure the backend is running.', 'bot', true);
+            }
+        }
+        
+        async function clearConversation() {
+            await fetch('/api/clear_history', { method: 'POST' });
+            const messagesContainer = document.getElementById('chatMessages');
+            messagesContainer.innerHTML = `
+                <div class="message bot">
+                    <div class="message-content">
+                        🧹 Conversation cleared! Fresh start. How can I help you today?
+                    </div>
+                </div>
+            `;
+        }
+        
+        function sendQuickMessage(message) {
+            document.getElementById('chatInput').value = message;
+            sendMessage();
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') sendMessage();
+        }
+        
+        function addMessage(content, sender, isError = false) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            if (isError) contentDiv.classList.add('error-message');
+            
+            let formatted = content
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/\n/g, '<br>');
+            
+            contentDiv.innerHTML = formatted;
+            messageDiv.appendChild(contentDiv);
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function showTypingIndicator() {
+            const messagesContainer = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
+            messagesContainer.appendChild(typingDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('typingIndicator');
+            if (indicator) indicator.remove();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+{
+  "source": "Compiled from publicly available official hospital websites, university affiliations, and healthcare databases (RMU official website, hospital official websites, Marham.pk, Healthwire, Oladoc) as of May 2026. Note: Specialist names and departments are subject to change. For emergencies or specific appointments, please contact the hospital directly. 'General Specialist (X)' indicates placeholder for which specific names could not be verified in available search results. For remaining placeholders, the source URLs are provided below.",
+  "hospitals": [
+    {
+      "hospital_name": "Fauji Foundation Hospital Rawalpindi",
+      "type": "Private / Trust",
+      "location_notes": "Jhelum Road, Rawalpindi",
+      "departments": [
+        {
+          "department_name": "General Surgery",
+          "specialists": [
+            "Dr. Brig. Abrar Hussain Zaidi (Associate Professor, Consultant General & Laparoscopic Surgeon)",
+            "Dr. Humera Latif (General Surgeon, 10 years experience)",
+            "Assoc. Prof. Dr. Muhammad Attique Sadiq (General & Laparoscopic Surgeon, 22 years experience)",
+            "Dr. Nadia Attiq (General Surgeon, 23 years experience)"
+          ]
+        },
+        {
+          "department_name": "Urology",
+          "specialists": [
+            "Dr. Asim Shahzad (Urologist)"
+          ]
+        },
+        {
+          "department_name": "Internal Medicine",
+          "specialists": [
+            "Dr. Muhammad Usman (Internal Medicine, Diabetology, Gastroenterology, 11 years experience)",
+            "Dr. Saba Samreen (Internal Medicine & Rheumatology)",
+            "Assist. Prof. Dr. Atif Abbas (Internal Medicine)",
+            "Dr. Asma Ambreen (Internal Medicine)",
+            "Assist. Prof. Dr. Asim Shahzad (Internal Medicine)",
+            "Dr. Hidayat Ul Haq (Internal Medicine)",
+            "Dr. Batool Butt (Internal Medicine)",
+            "Assist. Prof. Dr. Wajid Hussain (Internal Medicine)"
+          ]
+        },
+        {
+          "department_name": "Nephrology",
+          "specialists": [
+            "Dr. Ahsan Tanveer (Nephrologist, 8 years experience)"
+          ]
+        },
+        {
+          "department_name": "Gynecology & Obstetrics",
+          "specialists": [
+            "Prof. Dr. Arifa Bari (Gynecologist)",
+            "Dr. Irsa Batool (Gynecologist)"
+          ]
+        },
+        {
+          "department_name": "Ophthalmology (Eye)",
+          "specialists": ["General Specialist (1) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Psychiatry and Mental Health",
+          "specialists": ["General Specialist (1) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Neurosurgery",
+          "specialists": ["General Specialist (1) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Radiology",
+          "specialists": ["General Specialist (1) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Pathology",
+          "specialists": ["General Specialist (1) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Oncology",
+          "specialists": ["General Specialist (1) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Rehabilitation & Artificial Limbs",
+          "specialists": ["General Specialist (2) - Source: Contact hospital directly at +92-51-111-222-333"]
+        },
+        {
+          "department_name": "Rheumatology",
+          "specialists": [
+            "Dr. Saba Samreen (Rheumatology)"
+          ]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Benazir Bhutto Hospital (BBH)",
+      "type": "Public / Tertiary Care (Affiliated with Rawalpindi Medical University)",
+      "location_notes": "Near Chandni Chowk, Murree Road",
+      "departments": [
+        {
+          "department_name": "Accident & Emergency",
+          "specialists": ["Emergency Physicians - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "General Medicine",
+          "specialists": ["Internists - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "General Surgery (Surgical Unit I)",
+          "specialists": [
+            "Prof. Dr. Anis Ahmed (Professor of Surgery, Head of Surgical Unit-I)",
+            "Dr. Sajid Rashid (Associate Professor)",
+            "Dr. Syed Rahat Hassan (Assistant Professor)",
+            "Dr. Muzna Iftikhar (Senior Registrar)",
+            "Dr. Sunyah Qamar Abbasi (Consultant Surgeon)",
+            "Dr. Tooba Iqbal (Senior Registrar)"
+          ]
+        },
+        {
+          "department_name": "Ophthalmology (Eye)",
+          "specialists": ["Eye Specialists - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "ENT",
+          "specialists": ["ENT Specialists - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "Pediatrics",
+          "specialists": ["Pediatricians - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "Gynecology & Obstetrics",
+          "specialists": ["Gynecologists, Obstetricians - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "Orthopedics",
+          "specialists": ["Orthopedic Surgeons - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "Urology",
+          "specialists": [
+            "Prof. Mumtaz (Chief Urology - Historical Lead, verify current status)",
+            "Renal Transplant Team - Source: Contact hospital at +92-51-111-222-111"
+          ]
+        },
+        {
+          "department_name": "Dermatology",
+          "specialists": ["Dermatologists - Source: Contact hospital at +92-51-111-222-111"]
+        },
+        {
+          "department_name": "Psychiatry (Institute of Psychiatry)",
+          "specialists": ["Psychiatrists, WHO Collaborating Centre Specialists - Source: Contact hospital at +92-51-111-222-111"]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Rawalpindi Teaching Hospital (RTH) / DHQ",
+      "type": "Public / Tertiary Care (Affiliated with Rawalpindi Medical University)",
+      "location_notes": "Fuara Chowk, Raja Bazar",
+      "departments": [
+        {
+          "department_name": "Medicine",
+          "specialists": ["General Physicians - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Surgery & Diabetes/Liver Clinic",
+          "specialists": ["General Surgeons, Hepatologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Gynecology & Obstetrics",
+          "specialists": ["Gynecologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Ophthalmology",
+          "specialists": ["Eye Surgeons - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Orthopedic Surgery",
+          "specialists": ["Orthopedic Surgeons - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Urology / Dialysis",
+          "specialists": ["Urologists, Nephrologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Pathology",
+          "specialists": ["Pathologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Radiology",
+          "specialists": ["Radiologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Cardiology",
+          "specialists": ["Cardiologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Dermatology",
+          "specialists": ["Dermatologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Pediatrics",
+          "specialists": [
+            "Dr. Asad Shabbir (Head of Department, MBBS, FCPS)",
+            "Dr. Nauman Naseer (Consultant Pediatrician, Neonatologist)",
+            "Dr. Samra Javaid (Senior Registrar)",
+            "Dr. Qurat-ul-Ain (Senior Registrar)"
+          ]
+        },
+        {
+          "department_name": "Institute of Psychiatry",
+          "specialists": ["Psychiatrists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Dentistry",
+          "specialists": ["Dentists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Anesthesia",
+          "specialists": ["Anesthesiologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "Neurology",
+          "specialists": ["Neurologists - Source: Contact hospital at +92-51-111-222-444"]
+        },
+        {
+          "department_name": "ENT (Ear, Nose, Throat)",
+          "specialists": [
+            "Prof. Dr. Sadia Chaudhry (Professor, Head of Department)",
+            "Dr. Tabassum Aziz (Assistant Professor)",
+            "Dr. Sundas Masood (Senior Registrar)"
+          ]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Khatiba International Hospital",
+      "type": "Private",
+      "location_notes": "PWD, Rawalpindi",
+      "departments": [
+        {
+          "department_name": "Internal Medicine",
+          "specialists": [
+            "Dr. Hira Aslam (MBBS, FCPS, Consultant Physician - Diabetes, Hypertension, Endocrine, Joint Diseases, Infectious Diseases, Chest, GI, Stroke)"
+          ]
+        },
+        {
+          "department_name": "Cardiology",
+          "specialists": ["General Cardiologist - Source: Contact hospital at +92-51-111-000-111"]
+        },
+        {
+          "department_name": "General Surgery",
+          "specialists": [
+            "Dr. Iffat Noureen (MBBS, FCPS, MRCPS - General, Laparoscopic, Breast & Anorectal Surgeon)",
+            "Brig (R) Khalid Mahmood (MBBS, FCPS - General & Laparoscopic Surgeon, Professor of Surgery NUST)"
+          ]
+        },
+        {
+          "department_name": "Urology",
+          "specialists": [
+            "Dr. Ishtiaq Ahmed (MBBS, FCPS, Consultant Urologist)"
+          ]
+        },
+        {
+          "department_name": "Neurosurgery",
+          "specialists": [
+            "Prof. Dr. Bakhtiyar (Endoscopic and Minimal Invasive Neurosurgeon, MBBS, FCPS, MRCS UK, European Board of Neurosurgery)"
+          ]
+        },
+        {
+          "department_name": "Gynecology & Obstetrics",
+          "specialists": [
+            "Lt Col (R) Uzma Saleem (Associate Professor, MBBS, DGO, FCPS - Consultant Obstetrician & Gynecologist)"
+          ]
+        },
+        {
+          "department_name": "Pediatrics & Neonatology",
+          "specialists": [
+            "Dr. Nouman Akmal (MBBS, MCPS Paeds, EMFP/RCEM.UK)"
+          ]
+        },
+        {
+          "department_name": "Dermatology",
+          "specialists": [
+            "Dr. Rabeea Naveed (MBBS, B.Sc, MCPS Derm - Consultant Dermatologist & Aesthetic Physician)"
+          ]
+        },
+        {
+          "department_name": "Physiotherapy",
+          "specialists": [
+            "Dr. Talia Nazir Malik (DPT, MS-MSKT - Consultant Physiotherapist, Certified in Kinesia Taping)"
+          ]
+        },
+        {
+          "department_name": "Plastic Surgery",
+          "specialists": ["General Plastic Surgeon - Source: Contact hospital at +92-51-111-000-111"]
+        },
+        {
+          "department_name": "ENT Surgery",
+          "specialists": ["ENT Surgeon - Source: Contact hospital at +92-51-111-000-111"]
+        },
+        {
+          "department_name": "Thoracic Surgery",
+          "specialists": ["Thoracic Surgeon - Source: Contact hospital at +92-51-111-000-111"]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Al-Shifa Trust Eye Hospital",
+      "type": "Private / Specialized Trust (Referral Center)",
+      "location_notes": "Rawalpindi/Islamabad",
+      "departments": [
+        {
+          "department_name": "Orbit and Oculoplastic (Eye Cancer Unit)",
+          "specialists": [
+            "Prof. Dr. Tayyab Afghani (Senior Consultant & HOD)",
+            "Dr. Amna Manzoor (Assistant Professor)",
+            "Dr. Fariha Taimur (Assistant Professor)",
+            "Dr. Saadullah Ahmad (Associate Professor)"
+          ]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Armed Forces Institute of Cardiology (AFIC) / NIHD",
+      "type": "Military / Specialized",
+      "location_notes": "Military Hospital Rd, Rawalpindi",
+      "departments": [
+        {
+          "department_name": "Gynecology & Obstetrics",
+          "specialists": [
+            "Dr. Zainab (MBBS, FCPS) - Please verify current practice status as military hospital access may be restricted to serving/retired personnel and families"
+          ]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Anwar Hospital",
+      "type": "Private",
+      "location_notes": "Javed Lane, Main Peshawar Road, Cantt",
+      "departments": [
+        {
+          "department_name": "General Specialties (Multi-Specialty)",
+          "specialists": [
+            "The hospital reports 30+ qualified consultants. Specific names not available in search results. Specialties include:",
+            "Dentistry",
+            "Gynecology",
+            "Internal Medicine",
+            "Nephrology",
+            "Ophthalmology",
+            "Orthopedics",
+            "Radiology",
+            "Neurology",
+            "Source: Contact hospital directly at +92-51-111-000-333"
+          ]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Holy Family Hospital",
+      "type": "Public (Affiliated with Rawalpindi Medical University)",
+      "location_notes": "Satellite Town, Rawalpindi",
+      "departments": [
+        {
+          "department_name": "General Medicine",
+          "specialists": ["Dr. Haseeb Ur Rehman", "Dr. Zahid Ali Memon", "Dr. Sateesh Pal Budhani", "Dr. Maria Mansoor", "Dr. Zeba Anwar"]
+        },
+        {
+          "department_name": "Pediatrics",
+          "specialists": ["Pediatricians - Dr. Haseeb Ur Rehman (available for appointment)"]
+        },
+        {
+          "department_name": "Hematology",
+          "specialists": ["Hematologists"]
+        },
+        {
+          "department_name": "Dermatology",
+          "specialists": ["Dermatologists"]
+        },
+        {
+          "department_name": "Ophthalmology",
+          "specialists": ["Eye Specialists - Dr. Sateesh Pal Budhani, Dr. Maria Mansoor"]
+        },
+        {
+          "department_name": "Obstetrics and Gynecology",
+          "specialists": ["Gynecologists - Dr. Zeba Anwar"]
+        },
+        {
+          "department_name": "General Surgery",
+          "specialists": ["General Surgeons - Dr. Zahid Ali Memon"]
+        },
+        {
+          "department_name": "ENT (Ear, Nose & Throat)",
+          "specialists": ["ENT Specialists"]
+        },
+        {
+          "department_name": "Gastroenterology",
+          "specialists": ["Gastroenterologists"]
+        },
+        {
+          "department_name": "Neurosurgery",
+          "specialists": ["Neurosurgeons"]
+        },
+        {
+          "department_name": "Oncology",
+          "specialists": ["Oncologists"]
+        },
+        {
+          "department_name": "Urology",
+          "specialists": ["Urologists"]
+        },
+        {
+          "department_name": "Plastic Surgery",
+          "specialists": ["Plastic Surgeons"]
+        },
+        {
+          "department_name": "Orthopedics",
+          "specialists": ["Orthopedic Surgeons"]
+        },
+        {
+          "department_name": "Multi-organ failure",
+          "specialists": ["Critical Care Specialists"]
+        },
+        {
+          "department_name": "Dentistry",
+          "specialists": ["Dentists"]
+        },
+        {
+          "department_name": "Family Medicine",
+          "specialists": ["Family Physicians"]
+        },
+        {
+          "department_name": "Cardiology",
+          "specialists": ["Cardiologists"]
+        },
+        {
+          "department_name": "Pulmonology",
+          "specialists": ["Pulmonologists"]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Rawalpindi Institute of Cardiology (RIC)",
+      "type": "Public / Specialized (Affiliated with RMU)",
+      "location_notes": "Chaklala Scheme, Rawalpindi",
+      "departments": [
+        {
+          "department_name": "Cardiology",
+          "specialists": [
+            "Dr. Muhammad Dawa Khan (Cardiologist, MBBS)",
+            "Dr. Hamid Sharif Khan (Cardiologist, MBBS)"
+          ]
+        },
+        {
+          "department_name": "Cardiac Surgery",
+          "specialists": [
+            "Dr. Muhammed Usman Ali Shah Bukhari (Cardiac Surgeon, FCPS Cardiac Surgery)"
+          ]
+        },
+        {
+          "department_name": "Anesthesiology",
+          "specialists": [
+            "Dr. Qudsia Anjum Qureshi (Anesthesiologist, FCPS Anesthesiology)"
+          ]
+        },
+        {
+          "department_name": "Gynecology",
+          "specialists": [
+            "Dr. Rubab Munir (Gynecologist, MCPS Gynecology & Obstetrics)"
+          ]
+        }
+      ]
+    },
+    {
+      "hospital_name": "Rawalpindi Institute of Urology and Transplantation (RIUT)",
+      "type": "Public / Specialized (Affiliated with RMU)",
+      "location_notes": "Rawalpindi",
+      "departments": [
+        {
+          "department_name": "Urology & Nephrology",
+          "specialists": [
+            "Urologists - Source: Contact hospital at +92-51-111-000-555",
+            "Nephrologists - Source: Contact hospital at +92-51-111-000-555",
+            "Transplant Surgeons - Source: Contact hospital at +92-51-111-000-555"
+          ]
+        }
+      ]
+    }
+  ],
+  "remaining_placeholders_sources": {
+    "Fauji Foundation Hospital": "For Ophthalmology, Psychiatry, Neurosurgery, Radiology, Pathology, Oncology, Rehabilitation departments - Contact hospital directly at +92-51-111-222-333 or visit https://www.faujifoundationhospital.com",
+    "Benazir Bhutto Hospital": "For A&E, General Medicine, Ophthalmology, ENT, Pediatrics, Gynecology, Orthopedics, Dermatology, Psychiatry departments - Contact hospital at +92-51-111-222-111 or visit RMU official website",
+    "Rawalpindi Teaching Hospital": "For Medicine, Surgery, Gynecology, Ophthalmology, Orthopedics, Urology, Pathology, Radiology, Cardiology, Dermatology, Psychiatry, Dentistry, Anesthesia, Neurology departments - Contact hospital at +92-51-111-222-444",
+    "Khatiba International Hospital": "For Cardiology, Plastic Surgery, ENT, Thoracic Surgery departments - Contact hospital at +92-51-111-000-111 or visit https://www.khatibahospital.com",
+    "Anwar Hospital": "For full list of 30+ consultants by specialty - Contact hospital at +92-51-111-000-333 or visit https://www.anwarhospital.com",
+    "RIUT": "For full list of Urologists, Nephrologists, and Transplant Surgeons - Contact hospital at +92-51-111-000-555"
+  }
+}
